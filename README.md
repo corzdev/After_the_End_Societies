@@ -1,9 +1,12 @@
 Custom Societies created by Corz for After the End mod in Crusader Kings 2.
 
-CurrentVersion 0.1 Beta
-
-Change Log:
+Societies currently in place:
+	-Freemasons (work like assassins. only available tjo oldworld religions)
 	
-	-v0.1 Beta
-		
-		* Initial Release
+
+CurrentVersion: **0.1 Beta**
+
+**Change Log:**
+
+- V0.1 Beta
+	- Initial Release
