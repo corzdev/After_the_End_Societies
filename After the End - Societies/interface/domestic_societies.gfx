@@ -740,6 +740,44 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\societies\\society_currency_hermetics.dds"
 	}
 	
+	#### The FreeMasons ####
+	
+	spriteType = {
+		name = "GFX_society_main_background_the_assassins"
+		texturefile = "gfx\\interface\\societies\\society_bg_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_expansion_background_the_assassins"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_small_the_assassins"
+		texturefile = "gfx\\interface\\societies\\symbol_small_the_assassins.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_society_influence_the_assassins"
+		texturefile = "gfx\\interface\\societies\\society_influence_the_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_the_assassins"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_the_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_the_assassins"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_the_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_currency_the_assassins"
+		texturefile = "gfx\\interface\\societies\\society_currency_the_assassins.dds"
+	}	
+		
 	##### Secret Society #####
 	
 	spriteType = {

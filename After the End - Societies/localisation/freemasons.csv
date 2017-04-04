@@ -1,0 +1,20 @@
+the_freemasons;The Freemasons of the US;;;;;;;;;;;;;x
+the_freemasons_desc;A mysterious brotherhood of profound if uncertain influence, a secret society puported in some popular histories to have roots in the fabled order of the Knights Templar, or in the mysteries of the Egyptian Pyramids. They evoke fears of the world domination by a select who enjoy priveleged access to wealth and the levers of power. We work in the dark to protect the light!;;;;;;;;;;;;;x
+currency_name_the_freemasons;Mutual Aid;;;;;;;;;;;;;x
+the_freemasons_rank_1_male;Steward;;;;;;;;;;;;;x
+the_freemasons_rank_2_male;Deacon;;;;;;;;;;;;;x
+the_freemasons_rank_3_male;Junior Warden;;;;;;;;;;;;;x
+the_freemasons_rank_4_male;Worshipful Master;;;;;;;;;;;;;x
+the_freemasons_leader_desc;Handles all of the business of the lodge and is vested with condierable powers without further reference to the members.;;;;;;;;;;;;;x
+freemasons_recruit;Recruit to The Freemasons;;;;;;;;;;;;;x
+freemasons_recruit_desc;Attempt to find out whether [Root.GetTitledFirstName] is open to the power of The FreeMasons. If so, you may invite [Root.GetHerHim] to become a recruit.;;;;;;;;;;;;;x
+freemasons_recruit_block_tooltip;Has not been asked to join the FreeMasons already;;;;;;;;;;;;;x
+String_Marx;Marx;;;;;;;;;;;;;x
+String_Kropotkin;Kropotkin;;;;;;;;;;;;;x
+String_direct_action;direct action;;;;;;;;;;;;;x
+String_card_man;card man;;;;;;;;;;;;;x
+String_card_men;card men;;;;;;;;;;;;;x
+String_recruit;recruit;;;;;;;;;;;;;x
+String_We_work_in_the_dark_to_protect_the_light;We work in the dark to protect the light!;;;;;;;;;;;;;x
+String_George_Washington;George Washington;;;;;;;;;;;;;x
+String_The_FreeMasons;The FreeMasons;;;;;;;;;;;;;x

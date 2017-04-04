@@ -14,7 +14,7 @@ the_freemasons = {
 						has_dlc = "Mystics"
 						NOT = {
 								has_game_rule = {
-										name = freemasons
+										name = devil_worshipper
 										value = none}
 							}
 						}
@@ -24,7 +24,7 @@ the_freemasons = {
 						hidden_trigger = {
 								NOT = {
 									has_game_rule = {
-											name = freemasons
+											name = devil_worshipper
 											value = none
 											}
 										}
@@ -43,7 +43,7 @@ the_freemasons = {
 				show_society = {
 						NOT = {
 							has_game_rule = {
-									name = freemasons
+									name = devil_worshipper
 									value = none}}
 								
 						age = 16

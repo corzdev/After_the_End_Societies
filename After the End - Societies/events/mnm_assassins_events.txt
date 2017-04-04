@@ -1669,6 +1669,53 @@ letter_event = {
 	}
 }
 
+#Does recruit approve of OldWorld?
+character_event = {
+			id = MNM.6050
+			picture = GFX_evt_feast
+			border = GFX_event_normal_frame_diplomacy
+			
+			desc = {
+				trigger = {NOT = { religion_group = oldworld } }
+				text = EVTDESC_MNM_6050_A
+			}
+			desc = {
+				trigger = {religion_group = oldworld } 
+				text = EVTDESC_MNM_6050_B
+			}
+			
+			is_triggered_only = yes
+			
+			immediate = {
+				if = {
+					limit = { NOT = { event_target:freemasons_recruiter = { always = yes} } }
+					FROMFROM = { save_event_target_as = freemasons_recruiter }
+				}
+				save_event_target_as = freemasons_recruitee
+				set_character_flag = ongoing_recruitment
+				}
+			
+			#Accepting of OldWorld
+			option = {
+				name = {
+					trigger = { NOT = { religion_group = oldworld } }
+					text = EVTOPTA_6050_OLDWORLD
+				}
+				name = {
+					trigger = { religion_group = oldworld }
+					text = EVTOPTA_6050_OLDWORLD
+				}
+				reverse_opinion = {
+					who = event_target:freemasons_recruiter
+					modifier = opinion_agreed_with_opinion
+					years = 5
+				}
+				
+				set_character_flag = approves_of_
+				}
+			}
+
+
 ###MURDER PLOT EVENTS (start on 6100)
 
 #Plotter sees an opportunity - assassinate

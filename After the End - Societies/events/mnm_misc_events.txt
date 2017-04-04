@@ -107,6 +107,7 @@ character_event = {
 	trigger = {
 		is_in_society = no
 		OR = {
+			interested_in_society = the_freemasons
 			interested_in_society = the_assassins
 			interested_in_society = the_satanists
 			interested_in_society = the_trollcrafters
@@ -146,6 +147,7 @@ character_event = {
 	trigger = {
 		is_in_society = no
 		OR = {
+			interested_in_society = the_freemasons
 			interested_in_society = the_assassins
 			interested_in_society = the_satanists
 			interested_in_society = the_trollcrafters
@@ -172,6 +174,23 @@ character_event = {
 	}
 
 	immediate = {
+		#FreeMasons
+		if = {
+				limit = {
+							interested_in_society = the_freemasons
+							NOT = { has_character_flag = being_recruited_by_the_freemasons }
+				}
+				random_society_member = {
+						limit = {
+								society_member_of = the_freemasons
+								#is_within_diplo_range = ROOT
+								is_society_grandmaster = no
+						}
+						save_event_target_as = assassins_recruiter
+						character_event = { id = FreeMasons.1}
+				}
+		}
+		
 		#Assassins
 		if = {
 			limit = {
@@ -269,7 +288,7 @@ character_event = {
 				character_event = { id = MNM.10017 }
 			}
 		}
-		#Secret religious sociery
+		#Secret religious society
 		if = {
 			limit = {
 				OR = {
@@ -1513,6 +1532,43 @@ character_event = {
 							}
 							set_society_grandmaster = yes
 						}
+					}
+					100 = {
+						trigger = {
+								can_join_society = the_freemasons
+						}
+						modifier = {
+							factor = 0.50
+							is_landed = no
+						}
+						modifier = {
+							factor = 2
+							is_landed = yes
+						}
+						join_society = the_freemasons
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									facotr = 0
+									society_influence >= 30
+								}
+									add_mission_succeed_influence_effect = yes
+								}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}	
 					}
 					50 = { 
 						trigger = {
